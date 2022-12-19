@@ -1,0 +1,78 @@
+{
+	"cale_galerie":"resources/images/galerie",
+	"imagini": [
+		{
+			"cale_fisier":"bracelet1.jpg",
+			"titlu":"ring4",
+			"text_descriere":"Inel floare",
+			"anotimp":"iarna"
+		},
+		{
+			"cale_fisier":"bracelet2.jpg",
+			"titlu":"ring5",
+			"text_descriere":"Inel diamant",
+			"anotimp":"iarna"
+			
+		},
+		{
+			"cale_fisier":"heartPendant.jpg",
+			"titlu":"ring3",
+			"text_descriere":"Inel logodna",
+			"anotimp":"iarna"		
+		},
+		{
+			"cale_fisier":"inelLogodna.jpg",
+			"titlu":"bracelet1",
+			"text_descriere":"Bratara",
+			"anotimp":"iarna"		
+		},
+		{
+			"cale_fisier":"pendantRuby.jpg",
+			"titlu":"bracelet2",
+			"text_descriere":"Bratara argint",
+			"anotimp":"iarna"		
+		},
+		{
+			"cale_fisier":"pendantRuby2.jpg",
+			"titlu":"pendantRuby",
+			"text_descriere":"Pandantiv",
+			"anotimp":"iarna"		
+		},
+		{
+			"cale_fisier":"ring1.jpg",
+			"titlu":"pendantRuby2",
+			"text_descriere":"Pandantiv argint" ,
+			"anotimp":"iarna"		
+		},
+		{
+			"cale_fisier":"ring2.jpg",
+			"titlu":"ring4",
+			"text_descriere":"Inel floare",
+			"anotimp":"iarna"
+		},
+		{
+			"cale_fisier":"ring3.jpg",
+			"titlu":"ring4",
+			"text_descriere":"Inel diamant",
+			"anotimp":"iarna"
+		},
+		{
+			"cale_fisier":"ring4.jpg",
+			"titlu":"ring4",
+			"text_descriere":"Inel argint",
+			"anotimp":"iarna"
+		},
+		{
+			"cale_fisier":"ring5.jpg",
+			"titlu":"ring4",
+			"text_descriere":"Inel aur",
+			"anotimp":"iarna"
+		},
+		{
+			"cale_fisier":"stoneBracelet.jpg",
+			"titlu":"ring4",
+			"text_descriere":"Inel diamant",
+			"anotimp":"iarna"
+		}
+	]
+}

@@ -1,0 +1,59 @@
+
+        <section id="galerie-statica">
+            <h2>Static Galery</h2>
+            <div id="grid-galerie">
+                <% var numberOfImages = 0;
+                for (let imag of locals.imagini) {
+                    
+                    if(numberOfImages<10){
+                    var d = new Date();
+                    var luna_r=d.getMonth();
+                    if((luna_r==0 || luna_r==1 || luna_r==11) && (imag.anotimp.includes("iarna"))){
+                        numberOfImages +=1; %>
+                        <figure>
+                            <picture>
+                                <source srcset="<%- imag.fisier_mediu %>" media="(max-width:1000px)" />
+                                <img src="<%- imag.cale_fisier %>" alt="imagine">
+                            </picture>
+                            <figcaption><%- imag.text_descriere %></figcaption>
+                        </figure>
+                       <% } %>
+                
+                    <% if((luna_r==2 || luna_r==3 || luna_r==4) && (imag.anotimp.includes("primavara"))){ 
+                        numberOfImages +=1;%>
+                            
+                            <figure>
+                                <picture>
+                                    <source srcset="<%- imag.fisier_mediu %>" media="(max-width:1000px)" />
+                                    <img src="<%- imag.cale_fisier %>" alt="imagine">
+                                </picture>
+                                <figcaption><%- imag.text_descriere %></figcaption>
+                            </figure>
+                        
+                    <% } %>
+                    <% if((luna_r==5 || luna_r==6 || luna_r==7) && (imag.anotimp.includes("vara"))){
+                        numberOfImages +=1; %>
+                            <figure>
+                                <picture>
+                                    <source srcset="<%- imag.fisier_mediu %>" media="(max-width:1000px)" />
+                                    <img src="<%- imag.cale_fisier %>" alt="imagine">
+                                </picture>
+                                <figcaption><%- imag.text_descriere %></figcaption>
+                            </figure>
+                        
+                    <% } %>
+                    <% if((luna_r==8 || luna_r==9 || luna_r==10) && (imag.anotimp.includes("toamna"))){
+                        numberOfImages +=1; %>
+                            <figure>
+                                <picture>
+                                    <source srcset="<%- imag.fisier_mediu %>" media="(max-width:1000px)" />
+                                    <img src="<%- imag.cale_fisier %>" alt="imagine">
+                                </picture>
+                                <figcaption><%- imag.text_descriere %></figcaption>
+                            </figure>
+                    <% } %>
+                    <% } %>
+                <% } %>
+            
+        </div>
+    </section>

@@ -1,0 +1,80 @@
+/* faptul ca nu pot accesa cum trebuie submeniurile se va rezolva in partea de javascript */
+body{
+    --selected-menu-option:rgb(230,207,207);
+
+}
+
+#hamburger{
+    display: block;
+    height: var(--height-menu)
+}
+#hamburger img{
+    height: 100%;
+    width: auto;
+}
+nav{
+    display: block;
+    /* position: relative; */
+}
+/* ascundem meniu */
+ul.menu{
+    display: none;
+    animation-name: menu-animation;
+    animation-duration: 1s;
+    animation-timing-function: linear; 
+    /* dupa ce se termina animatia, meniul ramane la starea initiala */
+    animation-fill-mode:forwards;
+    animation-iteration-count: 1; 
+    /* origine definita pe latine inaltime */
+    
+    transform-origin: left top;
+    
+    transform: rotate(-90deg);
+    opacity: 0;
+}
+#ch-menu:checked~ul.menu{
+    display: block;
+}
+
+
+ul.menu li{
+    width: 100% !important;
+}
+
+ul.menu ul{
+    width: 100%;
+ }
+ul.menu li:hover {
+    
+    animation:none;
+    opacity:1;
+    transform: scale(1,1);
+}
+
+ 
+/* scalare pe verticala */
+@keyframes menu-animation{
+    100%{
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+div[class="scrollOrar"]{
+    overflow: auto;
+    white-space: nowrap;
+}
+
+ul.menu>li>a:hover::after{
+    width: 0; 
+}
+a[id="ceva"]:hover{
+    background-color: var(--selected-menu-option) !important;
+}
+
+#home{
+    display: none;
+}
+ul.menu div:hover{
+    background-color: var(--selected-menu-option);
+}

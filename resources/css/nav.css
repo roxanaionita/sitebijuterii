@@ -1,0 +1,181 @@
+body {
+  --height-menu: 25px;
+  --width-button: 100px;
+  --border-weight-menu: 0.1px;
+  --navbar: rgb(189, 143, 143);
+  --selected-menu-option: rgb(230, 207, 207);
+  --text-color: rgb(64, 57, 57);
+  --text-color-hover-submenu: rgb(58, 58, 58); 
+  }
+
+ul.menu {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+  ul.menu li a {
+    display: block;
+    height: 100%; }
+  ul.menu li:hover ul {
+    animation-name: animation_submenu;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform-origin: center;
+    display: block; }
+  ul.menu > li {
+    height: var(--height-menu);
+    overflow: hidden;
+    line-height: var(--height-menu);
+    vertical-align: middle;
+    border: var(--border-weight-menu) solid var(--text-color);
+    width: var(--width-button);
+    text-align: center; }
+    ul.menu > li > a::after {
+      content: "";
+      position: absolute;
+      background: linear-gradient(to right, var(--selected-menu-option), var(--navbar));
+      transform-origin: 1 0;
+      width: 0%;
+      right: 0;
+      transition: 0.4s;
+      height: 4px;
+      bottom: -1px; }
+    ul.menu > li > a:hover::after {
+      width: var(--width-button); }
+    ul.menu > li a[id="ceva"]:hover {
+      background-color: var(--navbar);
+      color: black; }
+    ul.menu > li a:hover {
+      background-color: var(--selected-menu-option);
+      color: var(--text-color-hover-submenu); }
+    ul.menu > li:hover {
+      overflow: visible; }
+  ul.menu ul {
+    list-style-type: none;
+    z-index: 10px;
+    /*plaseaza submeniul peste grid*/
+    position: relative;
+    /*1px deoarece atat are borderul*/
+    left: -1px;
+    padding: 0;
+    margin: 0;
+    transform: scaleY(0); }
+    ul.menu ul li {
+      width: var(--width-button);
+      height: var(--height-menu);
+      border: var(--border-weight-menu) solid var(--text-color); }
+  ul.menu a, ul.menu div {
+    color: black;
+    /*textul din a sa nu mai fie subliniat*/
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--navbar);
+    position: relative;
+    transition: all 1s linear; }
+
+nav {
+  height: var(--height-menu);
+  /*var de culoare meniu. Daca nu am display flex, menu si nav bar-ul nu sunt afisate ok, ci una sub alta*/
+  display: flex;
+  background-color: var(--navbar);
+  overflow: visible;
+  width: 100vw;
+  position: sticky;
+  top: 0; }
+
+#hamburger,
+#ch-menu {
+  display: none; }
+
+@keyframes animation_submenu {
+  50% {
+    transform: scaleY(0.5); }
+  100% {
+    transform: scaleY(1); } }
+
+@media print{
+  /* nav{
+    display: block;
+    width: 200px;
+  }
+  ul.menu{
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style-type: square;
+  }
+  
+  ul.menu>li{
+    width: 200px;
+    overflow: visible;
+
+  }
+  ul.menu li {
+    width: 200px;}
+  ul.meniu ul{
+    list-style-type: circle;
+    position:relative;
+    left:-1px;
+    padding:0;
+    margin:0;
+} */
+ul.menu {
+  display: block;
+  list-style-type: square;
+  padding: 0;
+  margin: 0;
+  width: 300px; }
+  ul.menu li a {
+    display: block;
+     }
+  ul.menu li:hover ul {
+    animation: none;
+    display: block; }
+  ul.menu > li {
+    height: var(--height-menu);
+    overflow: visible;
+    line-height: var(--height-menu);
+    vertical-align: middle;
+    border: var(--border-weight-menu) solid var(--text-color);
+    width: var(--width-button);
+    text-align: center; }
+    
+  ul.menu ul {
+    list-style-type: square;
+    z-index: 10px;
+    /*plaseaza submeniul peste grid*/
+    position: relative;
+    /*1px deoarece atat are borderul*/
+    left: -1px;
+    padding: 0;
+    margin: 0;
+    transform: none; }
+    ul.menu ul li {
+      width: 300px;
+      height: var(--height-menu);
+      border: var(--border-weight-menu) solid var(--text-color); }
+  ul.menu a, ul.menu div {
+    color: black;
+    /*textul din a sa nu mai fie subliniat*/
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--navbar);
+    position: relative;
+    transition: none; }
+
+nav {
+  height: var(--height-menu);
+  /*var de culoare meniu. Daca nu am display flex, menu si nav bar-ul nu sunt afisate ok, ci una sub alta*/
+  display: block;
+  background-color: var(--navbar);
+  overflow: visible;
+  width: 300px;
+  position: sticky;
+  top: 0; }
+
+}

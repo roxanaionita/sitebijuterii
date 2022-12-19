@@ -1,0 +1,42 @@
+
+@use '../../node_modules/bootstrap/scss/bootstrap.scss' with (
+    $primary:purple,
+    $grid-breakpoints: (
+      xs: 0,
+      sm: 576px,
+      md: 768px,
+      lg: 992px,
+      xl: 1200px,
+      xxl: 1400px
+    ),
+    $container-max-widths: (
+    sm: 500px,
+    md: 700px,
+    lg: 950px,
+    xl: 1100px,
+    xxl: 1320px
+),
+$h1-font-size:                 2rem ,
+$h2-font-size:                 1.7rem ,
+$h3-font-size:                 1.5rem ,
+$h4-font-size:                1.3rem ,
+$h5-font-size:                1.2rem ,
+$h6-font-size:                1rem,
+
+$border-radius:               .37rem ,
+$border-radius-sm:            .25rem ,
+$border-radius-lg:            .5rem ,
+$border-radius-xl:            1rem ,
+$border-radius-2xl:           2rem,
+$border-radius-pill:          52rem ,
+
+$font-family-sans-serif:      Arial,
+$font-family-monospace:      monospace ,
+
+
+$grid-columns:                10 ,
+$grid-gutter-width:           1.7rem ,
+
+
+
+)

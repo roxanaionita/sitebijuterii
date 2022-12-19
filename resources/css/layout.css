@@ -1,0 +1,376 @@
+body{
+    --padding-main:0%;
+    --body-background: rgb(255,230,230);
+    --main-background: rgb(243,207,198);
+    --text-color: rgb(64,57,57);
+    --text-shadow:rgb(223,162,162);
+    --border-color: black;
+    --link-top-border:grey;
+    --border-target:rgb(128, 203, 240);
+    --linktop-color1:rgb(189,143,143);
+    --linktop-color2:rgb(230,207,207);
+    --table-color1:rgb(189,143,143);
+    --table-color2:rgb(223,162,162);
+    --table-selected-odd:rgb(255,230,230);
+    --table-selected-even:rgb(230,207,207);
+    
+   
+    background-color: var(--body-background);
+    font-size:15px;
+    font-weight:normal;
+    transition:all 1s linear;
+    
+}
+
+header{
+    
+    font-family: 'Tangerine', serif;
+    font-size: 2em;
+    text-shadow: 4px 4px 4px var(--text-shadow);
+    text-align: center;
+}
+nav{
+    font-family: 'Times New Roman', serif;
+    font-size: 0.5em;
+
+}
+main{
+    background-color: var(--main-background);
+    margin-left: var(--padding-main);
+    margin-right: var(--padding-main);
+}
+footer{
+    background-color: var(--body-background);
+    color:var(--text-color);
+}
+
+#grid-page{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "z-welcome z-welcome z-welcome"
+                        "z-motivation z-discounts z-helpful"
+                        "z-statistics z-discounts z-helpful"
+                        "z-statistics z-announces z-orar"
+                        "z-questions z-questions z-questions"
+                       ;
+}
+
+#grid-page>*{
+    border: 2px solid var(--border-color);
+    margin: 0px;
+    padding: 1px;
+}
+#welcome{
+    grid-area: z-welcome;
+}
+#discounts{
+    grid-area: z-discounts;
+}
+#orar{
+    grid-area: z-orar;
+}
+#announces{
+    grid-area: z-announces;
+}
+#questions{
+    grid-area: z-questions;
+}
+#statistics{
+    grid-area: z-statistics;
+}
+#helpful{
+    grid-area: z-helpful;
+}
+#motivation{
+    grid-area: z-motivation;
+}
+#galerie-statica{
+    grid-area: z-galerie;
+}
+/*folosit pentru afisarea pe telefon a unei singure coloane*/
+@media screen and (max-width:750px){
+    #grid-page{
+        display: block;
+        
+    }
+    body{
+        font-size: 0.5em;
+    }
+}
+@media screen and (max-width:1200px) and (min-width:750px){
+    #grid-page{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "z-welcome z-welcome"
+                            "z-motivation z-discounts"
+                            "z-statistics z-discounts"
+                            "z-statistics z-announces"
+                            "z-helpful z-helpful"
+                            "z-questions z-orar"
+    }
+    body{
+        font-size: 0.7em;
+    }
+}
+
+/* forma parinte */
+#link-top{
+
+    height: 200px;
+    position:fixed;
+    bottom:0.3em;
+    opacity:0.5;
+    left:0.3em;
+    width:3rem;
+    box-sizing: border-box;
+    height:3rem;
+    line-height:3rem;
+    border:1px  var(--link-top-border);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background: linear-gradient(to right, var(--linktop-color1), var(--linktop-color2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 2s;
+    transition-timing-function: linear; 
+
+}
+
+#sageata{
+    display:inline-block;
+    transition-timing-function: linear;
+    transition-duration: 2s;
+}
+
+#link-top:hover{
+    opacity: 1; 
+}
+
+#link-top:hover #sageata{
+    transform: scale(2);
+}
+
+
+/*celule iframe*/
+a[target="ifr_video"]{
+    
+    border: 1px solid var(--border-target);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: var(--body-background);
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    line-height: 30px;  
+    height: 30px;
+    width: 100px;
+    box-shadow: var(--border-target) 0px 5px 15px;
+}
+a[target="ifr_video"]:hover{
+    background-color: var(--main-background);
+}
+
+
+
+.iframe-tabs{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* centrare elemente flexbox */
+    justify-content: center;
+    /* spatiu intre elementele din flexbox */
+    width: 550px;
+    /* e cat width video */
+    gap:5px;
+      
+}
+
+/* TABEL */
+
+table, td, th { 
+
+    font-size: 15px;
+    border: 1px solid black;
+    text-align: center;
+}
+table {
+    border-collapse: separate;
+    width: 100%;
+    border-spacing: 2px;
+}
+th, td {
+    padding: 5px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--table-color1);
+    transition: background-color 2s linear;
+}
+tbody tr:nth-child(odd) {
+    background-color: var(--table-color2);
+    transition: background-color 2s linear;
+}
+
+tbody tr:nth-child(even):hover {background-color: var(--table-selected-even);}
+tbody tr:nth-child(odd):hover {background-color: var(--table-selected-odd);}
+
+      
+
+#attention{
+    font-size: 1.5em;
+}
+
+/* TEXT DIN VTT */
+::cue{
+    background-color: pink;
+    opacity: 0.5;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+
+/* TASK PRINTARE */
+#watermark,#absolut{
+    display:none;
+}
+
+@media print {
+
+
+#absolut{
+	position: absolute;
+	display: inline-block;
+	top:100%;
+	width:20px;
+	height:20px;
+	right:0;
+	overflow: visible;
+}	
+
+#absolut::after{
+    content:"Acesta este un proiect scolar!";
+    text-align: center;
+    position: absolute;
+    font-size:10px;
+    right:0;
+    border:5px double black;
+    width: 400px;
+    height:35px;
+    display: inline-block;
+}
+
+h1{
+    page-break-after: always;
+    margin-top: 50%;
+    text-align:center;
+    margin-left:1cm;
+}
+#galerie-statica{
+    display: none;
+}
+#galerie-animata{
+    display: none;
+}
+#helpful{
+    display: none;
+}
+#container-video{
+    display: none;
+}
+#link-top{
+    display: none;
+}
+#grid-page{
+    font-size: 10px;
+    box-sizing:border-box;
+    page-break-before:always;
+    background-color: white;
+    
+    /* grid-template-rows: calc(100vh - 10px) 100vh 100vh 100vh; */
+
+    display:block;
+}
+html, body {
+    text-decoration: none;
+    width: 210mm;
+    /* height: 297mm; */
+    /*height: 282mm;*/
+	overflow:visible !important;		
+}
+
+#watermark
+{
+    display: block;
+    position: fixed;/*apare pe toate paginile*/
+    bottom:0;
+    color:rgba(0,0,0,0.4);
+    right:0;
+}
+#watermark::after{
+        
+    opacity:0.4;
+    padding:5px;
+    display: block;
+    background: white;
+    border:2px solid black;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    border-right:none;
+    content:"Copyright Ionita Roxana";   
+    color: black; 
+}
+
+@page:left{
+
+    margin-left:2cm;
+    margin-right:1cm;
+}
+@page:right{
+
+    margin-right:2cm;
+    margin-left:1cm;
+}
+
+}
+
+
+/* TEXT REFLECTAT */
+#text-reflectat{
+	position:absolute;
+	left:0;
+	top:100%;
+	transform-origin:0 0;
+	/*conetaza ordinea transformarilor!*/
+	transform: rotateX(180deg) skew(-45deg) scaleY(0.5) translate(10px,-25px); 
+	opacity:0.55;
+}
+
+#text{	
+	position:relative;
+}
+
+#text, #text-reflectat{
+	font-size:35px;
+	line-height:50px;
+	font-weight: bold;
+}
+
+#text:hover div{
+    transform: skew(60deg) scale(1);
+}
+
+hr{
+    border:1px solid cornflowerblue;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+hr::before{
+    content: 'A';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    background: white;
+}

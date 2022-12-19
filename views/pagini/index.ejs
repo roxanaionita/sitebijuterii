@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="description"
+        content="Online jewellery store. Affordable prices, multiple payment options. One for every women." />
+    <meta name="keywords" content="necklaces, earrings, rings, bracelets, pendants, engagement, adjustable, 
+        pearl necklace, gold necklace, silver necklace, diamond necklace, diamond earrings, gold earrings, 
+        pearl earrings, silver earrings, engagement rings, wedding rings, diamonds, diamond ring, adjustable ring, silver bracelet, red bracelet,
+        coloured bracelet, string bracelet, gold pendant, silver pendant, zodiac pendant, zodiac, image, customizable, alphabet, heart, 
+        heart pendant, message" />
+
+
+    <title>Atalium Jewellery</title>
+    
+
+    <%- include("../fragmente/head.ejs")%>
+
+</head>
+<body>
+    <%- include("../fragmente/header.ejs")%>
+    <p id="watermark"></p>
+    <p id="absolut"></p>
+    <main>
+        
+        <div id="grid-page">
+            <section id="welcome">
+                <h2>Welcome to our online store!</h2>
+                <p class="intro">Thank you for choosing our store!</p>
+                <p>Ip: <%- locals.ip %></p>
+            </section>
+            
+
+            <section id="discounts">
+                <!-- <h2>Discounts</h2> -->
+                <div id="text">Discounts
+                    <div id="text-reflectat">Discounts
+                    </div>
+            </div>
+                <article>
+                    <h3 class="title"><button class="btn btn-primary">Weekend offers</button></h3>
+                    <p>
+                        <b>Atalium Store</b> offers
+                        <b>discounts of<s>10%</s> <ins>15%</ins></b> for all the products
+                        bought between 10-14 october
+                    </p>
+                    <p>
+                        The offer is valid only on the physical
+                        <abbr title="Atalium Store">AS</abbr>.
+                    </p>
+                </article>
+
+                <article>
+                    <h3 class="title bcd">Discount</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed
+                        suscipit mauris. Proin commodo, arcu in mollis ullamcorper, tortor
+                        elit pulvinar dui, at vehicula mauris felis laoreet mauris. Nunc
+                        vulputate risus ex.
+                    </p>
+
+                </article>
+
+                <article>
+                    <h3>Second discount</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed
+                        suscipit mauris. Proin commodo, arcu in mollis ullamcorper, tortor
+                        elit pulvinar dui, at vehicula mauris felis laoreet mauris. Nunc
+                        vulputate risus ex.
+                    </p>
+                </article>
+            </section>
+            <section id="motivation">
+                <h2>Motivation</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+            </section>
+
+            <section id="orar">
+                <h2>Orar</h2>
+                <div class="scrollOrar">
+                    <table id="tab-orar">
+                        <caption id="caption">When can you find us</caption>
+                        <thead>
+                            <tr>
+                                <th>Perioadă</th>
+                                <th>Zi</th>
+                                <th>Interval dimineata</th>
+                                <th>Pauza de masa</th>
+                                <th>Interval seară</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="5">Zile<br />Lucrătoare</td>
+                                <td>Luni</td>
+                                <td>10-12</td>
+                                <td>12-14</td>
+                                <td>14-20</td>
+                            </tr>
+                            <tr>
+                                <td>Marti</td>
+                                <td>9-12</td>
+                                <td>12-14</td>
+                                <td>14-21</td>
+                            </tr>
+                            <tr>
+                                <td>Miercuri</td>
+                                <td>9-11</td>
+                                <td>11-13</td>
+                                <td>14-21</td>
+                            </tr>
+                            <tr>
+                                <td>Joi</td>
+                                <td>9-11</td>
+                                <td>11-13</td>
+                                <td>14-21</td>
+                            </tr>
+                            <tr>
+                                <td>Vineri</td>
+                                <td>9-12</td>
+                                <td>12-14</td>
+                                <td>14-19</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Weekend</td>
+                                <td>Sambata</td>
+                                <td>10-12</td>
+                                <td>12-13</td>
+                                <td>13-16</td>
+                            </tr>
+                            <tr>
+                                <td>Duminica</td>
+                                <td>10-14</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">Programul poate varia de sarbatori.</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+
+            <section id="announces">
+                <h2>Announces</h2>
+                <p>
+                    <time datetime="2022-01-05">5 january 2022</time>
+
+
+
+                </p>
+                <p>
+                    <strong id="attention">No more Covid!!!!</strong>
+                </p>
+                <p>
+                    <time datetime="2020-07-05">5 iulie 2020</time> Am adăugat o
+                    prăjitură noua în meniu
+                </p>
+                <p>
+                    <time datetime="2020-09-15">15 septembrie 2020</time> Am adăugat un
+                    fursec nou în meniu
+                </p>
+                <p>
+                    <time datetime="2020-12-20">20 decembrie 2020</time> Nu avem nimic
+                    de anunțat, dar ne era dor de voi.
+                </p>
+                <p>
+                    <time datetime="2020-12-28">28 decembrie 2020</time> Am adăugat o
+                    prăjitură noua în meniu
+                </p>
+                <p>
+                    <time datetime="2021-01-01">1 ianuarie 2021</time> Un an nou
+                    fericit!
+                </p>
+            </section>
+
+            <section id="questions">
+                <h2>Frequently asked questions</h2>
+                <details>
+                    <summary>
+                        Produsele dumneavoastră provoacă afecțiuni dentare?
+                    </summary>
+                    <p>Da!</p>
+                </details>
+                <details>
+                    <summary>
+                        Produsele dumneavoastră provoacă afecțiuni ale sistemului digestiv
+                        (precum diabetul)?
+                    </summary>
+                    <p>Da!</p>
+                </details>
+                <details>
+                    <summary>Produsele dumneavoastră provoacă obezitate?</summary>
+                    <p>Foarte! Da!</p>
+                </details>
+                <details>
+                    <summary>
+                        Sunteți cumva asociați cu medicii dentiști, medicii
+                        gastroenterologi, companiile farmaceutice și sălile de Fitness?
+                    </summary>
+                    <p>
+                        Ne rezervăm dreptul de a nu răspunde la această întrebare;
+                        mulțumim pentru înțelegere!
+                    </p>
+                </details>
+            </section>
+            <section id="statistics">
+                <h2>Statistics</h2>
+                <p>We were ranked as the most known and appreciated jewellery store in 2022, with more than 2000 of
+                    followers and clients and more than 3500 sells.</p>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+                    infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+                    (injected humour and the like).There are many variations of passages of Lorem Ipsum available, but
+                    the majority have suffered alteration in some form, by injected humour, or randomised words which
+                    don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to
+                    be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                    generators on the Internet tend to repeat predefined chunks as necessary, making this the first true
+                    generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of
+                    model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum
+                    is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+            </section>
+            
+                    
+                
+
+            <!--
+            <section id="necklaces">
+                <figure style="width: 20%;">
+                    <picture> 
+                        <source srcset="resources/images/luxurysetDim_mica.png" media="(max-width:700px)"/>                        
+                        <source srcset="resources/images/luxurysetDim_medie.png" media="(max-width:1200px)"/>                        
+                        <img src="resources/images/luxuryset.png" style="width: 100%" alt="Image is not loading!" title="diamond set">
+                    </picture>
+                <figcaption style="text-align:center;color:royalblue;width: 100%">Luxury jewellery set</figcaption>
+                </figure>    
+            </section>
+            -->
+            <section id="helpful">
+                <h2>Helpful</h2>
+                <p>
+                    Learn how to chose the perfect ring size and how to properly clean
+                    your jewellery.
+                </p>
+                <div class="iframe-tabs">
+                    <a target="ifr_video" href="https://www.youtube.com/embed/3RpRRIODXBo">Perfect size</a>
+                    <a target="ifr_video" href="https://www.youtube.com/embed/CYs8m1MeA1U">Top 10 jewelry</a>
+                </div>
+                <iframe name="ifr_video" width="530" height="310" src="https://www.youtube.com/embed/CYs8m1MeA1U"
+                    title="YouTube video player" style="border:none"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </section>
+        </div>
+        <div id="container-video">
+            <video width="320" height="240" controls poster="/resources/images/poster.jpg" preload="none">
+                <source src="resources/video/production ID_4004214.mp4" type="video/mp4">
+                <source src="resources/video/production ID_4004214.ogg" type="video/ogg">
+                <source src="resources/video/production ID_4004214.ogv" type="video/ogv">
+
+                <track default kind="captions" src="/resources/video/tracks/captions_ro.vtt" srclang="ro" label="romana">
+                <track kind="captions" src="/resources/video/tracks/captions_en.vtt" srclang="en" label="engleza">
+
+                
+            </video>           
+        </div>
+
+        <%- include("../fragmente/staticGalery.ejs")%>
+   
+
+    </main>
+    
+    <div id="galerie-animata" class="galerie-a">
+        <% for (let imag of locals.imagini) { 
+                     %>
+                        <figure>
+                            <picture>
+                                <source srcset="<%- imag.fisier_mediu %>" media="(max-width:1000px)" />
+                                <img src="<%- imag.cale_fisier %>" alt="imagine">
+                            </picture>
+                            <figcaption><%- imag.text_descriere %></figcaption>
+                        </figure>
+                <% }  %>
+    </div>
+
+    <hr>
+    
+    <%- include("../fragmente/footer.ejs")%>
+
+    
+    
+</body>
+
+</html>

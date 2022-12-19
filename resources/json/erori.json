@@ -1,0 +1,42 @@
+{
+    "cale_baza": "resources/images/erori",
+    "eroare_default":{
+        "titlu":"Eroare !!!",
+        "text": "A survenit eroare.",
+        "imagine":"interzis.png"
+    },
+    "info_erori": [
+        {
+            "identificator":404,
+            "status":true,
+            "titlu":"Error 404",
+            "text": "This a link is broken or does not lead to a valid page on a website",
+            "imagine":"lupa.png"
+            
+        },
+        {
+            "identificator":403,
+            "status":true,
+            "titlu":"403 - Forbidden error",
+            "text": "You're trying to access something that you don't have permission for.",
+            "imagine":"interzis.png"
+        },
+        
+        {
+            "identificator":1,
+            "status":false,
+            "titlu":"Site în lucru",
+            "text": "Muncim, muncim!",
+            "imagine":"interzis.png"
+        },
+        
+        {
+            "identificator":2,
+            "status":false,
+            "titlu":"Eroare baza date",
+            "text": "Reveniti mai tarziu!",
+            "imagine":"interzis.png"
+        }
+    ]
+}
+  

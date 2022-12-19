@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "css": "^3.0.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "sass": "^1.56.1",
+    "sharp": "^0.31.2"
+  },
+  "name": "jewellery-store",
+  "version": "1.0.0",
+  "description": "affordable luxury",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "necklaces",
+    "earrings",
+    "rings",
+    "bracelets",
+    "pendants",
+    "engagement",
+    "adjustable",
+    "pearl",
+    "silver",
+    "gold"
+  ],
+  "author": "Ionita Roxana",
+  "license": "ISC"
+}
